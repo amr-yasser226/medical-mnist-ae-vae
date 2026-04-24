@@ -1,0 +1,4 @@
+AE  test MSE: 0.004289
+AE  test MAE: 0.035460
+VAE test MSE: 0.006991
+VAE test MAE: 0.044907
