@@ -30,7 +30,7 @@ Covers reconstruction, latent-space visualisation, sampling from the VAE prior, 
 
 The repository now includes a modularized Python package for local training.
 
-1. Download the dataset and place it under `data/raw/medical-mnist`.
+1. Unzip the included dataset archive: `unzip data/raw/medicalMNIST.zip -d data/raw/medical-mnist/`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the end-to-end training script:
    ```bash
