@@ -3,3 +3,5 @@ keras>=2.13
 numpy
 matplotlib
 scikit-learn
+pytest
+Pillow

@@ -10,7 +10,11 @@ Covers reconstruction, latent-space visualisation, sampling from the VAE prior, 
 .
 ├── notebooks/
 │   └── ae_vae_medical_mnist.ipynb   # Kaggle notebook (primary deliverable)
-├── figures/                          # Figures produced by the notebook (populated after a Kaggle run)
+├── src/                              # Modular Python source code (data pipeline, models, training)
+├── tests/                            # Unit tests for data and model logic
+├── data/                             # Dataset storage (e.g. data/raw/medicalMNIST)
+├── models/                           # Saved Keras model weights
+├── figures/                          # Figures produced by the notebook or training script
 ├── report/
 │   ├── report.tex                    # 2-page technical report source
 │   └── report.pdf                    # compiled report (produced from report.tex)
@@ -21,6 +25,21 @@ Covers reconstruction, latent-space visualisation, sampling from the VAE prior, 
 ├── requirements.txt
 └── README.md
 ```
+
+## How to run (Local Python Script)
+
+The repository now includes a modularized Python package for local training.
+
+1. Download the dataset and place it under `data/raw/medical-mnist`.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the end-to-end training script:
+   ```bash
+   python -m src.train --data-root data/raw/medical-mnist --epochs 30
+   ```
+4. Run unit tests:
+   ```bash
+   pytest tests/ -v
+   ```
 
 ## How to run (Kaggle)
 
