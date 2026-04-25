@@ -17,7 +17,6 @@ Covers reconstruction, latent-space visualisation, sampling from the VAE prior, 
 ├── presentation/
 │   ├── slides.tex                    # Beamer slides for the video demo
 │   └── slides.pdf                    # compiled slides
-├── video_script.md                   # Script for the 2-5 minute video demonstration
 ├── demo.mkv                          # Video demonstration recording
 ├── requirements.txt
 └── README.md
@@ -57,7 +56,7 @@ Both follow the Keras functional-API style used in Lab 3.
 | Loss visualisation               | `figures/02_ae_loss.png`, `figures/03_vae_loss.png`       |
 | `tf.data` pipeline               | notebook §2                                               |
 | Technical report (2 pages)       | `report/report.pdf`                                       |
-| Video demonstration              | `video_script.md` + `demo.mkv`                            |
+| Video demonstration              | `demo.mkv` (Note: The audio volume is unexpectedly low)   |
 
 ## Honest notes on expected results
 
